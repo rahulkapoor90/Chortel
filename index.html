@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Leave ChorTel</title>
+  <meta name="description" content="">
+  <link type="text/plain" rel="author" href="http://www.savetheinternet.in/humans.txt" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials-theme-flat.css" />
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  <div class="table-container">
+    <div class="table-block footer-push">
+      <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="container">
+        <div class="row" style="padding-bottom: 0px;">
+          <div class="two columns" id="mobile-width-column"><img class="u-max-full-width" id="mobile-width-logo" src="images/chortel.jpg" alt="Internet Freedom Foundation"></div>
+          <div class="ten columns">
+            <h4>#Chortel</h4>
+            <h6><span class="darker-color">After getting fed up with</span> Airtel service <span class="darker-color">many of us finally decided to switch to other network due to their 
+            continued</span> poor network coverage, charging too much for data packs and their annoying ads, customer support etc.</h6>
+            <p>But before I left I did send them a email and conveyed my anger and If you are fed up with Airtel below you can do the same. Tell the Chortel/Airtel that under no circumstance we will continue to be part of your money-grabbing techniques and force them to improve their survice.</p>
+            <button class="button button-primary-color twelve columns send-anchor-mobile" style="display:none;">Email the TRAI</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="eight columns">
+            <h4 id="response">Your response</h4>
+            <textarea id="message" class="twelve columns u-max-full-width" style="height: 300px;">
+To,
+Airtel,
+ 
+Subject: Complaint regarding Airtel Service.
+
+Dear Sir/Ma'am,
+
+With the arrival of better telecom operators like Reliance Jio there has been continued doubts in my mind whether to continue using your service or not. I have always been forced to continue using Airtel service because there was no other option till now. With better competetive prices of your competition I regret to inform that there may be a time in the near future that I may discontinue using your services or I might have already did but here's why I am annoyed by Airtel:
+
+1) Airtel, improves it's network coverage and it doesn't feel like I am using a wakie-talkie.
+
+2) There is better customer support, many of the times you guys have tried to money-grab and charge from me for the services I never signed up for and while these maybe happened by mistake on your end but your customer support doesn't make it easier for me or anyone else anyway. So please fix it and by fix it I mean provide the refund in time.
+
+3) Costly data-packs: Airtel is famous for providing the costliest data packs whether it would be charging rupees 2000 for 60GB data pack or any other datapack that you may find.
+
+I hope that this is fixed for others as I may have already left Chortel. Here's wishing you all the best for the future.
+
+Regards,
+YOUR_NAME
+</textarea>
+          </div>
+          <div class="four columns" style="margin-top: 7%;">
+            <p style="text-align: center;  font-size: 18px;" class="desktop-only">Copy the following text and click on the link below to email Airtel your feedback/Complaint<br>(Feel free to edit before sending)</p>
+            <a target="_blank" id="send-anchor-gmail" class="button button-primary twelve columns gmail">Send (via Gmail)</a>
+            <a target="_blank" id="send-anchor-other" class="button button-primary twelve columns other">Send (via Other)</a>
+            <button class="button button-primary-color twelve columns send-anchor-mobile" style="display:none;">Email Airtel</button>
+          </div>
+        </div>
+        <div class="row">
+          <h5>Important Note:</h5>
+          <ul>
+            <li>We BCC ourselves so we can keep count of how many emails have been sent.</li>
+            <li>Your email address will never be shared outside this website.</li>
+          </ul>        
+        </div>
+      </div>
+    </div>
+    <div class="footer-block">
+      <!-- Page Footer Layout
+           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="container">
+        <div id="share" class="row" style="text-align: center;">
+          <div id="jsSocials"></div>
+        </div>
+      </div> <!-- end footer div.container -->
+    </div>  <!-- end footer div.table-block -->
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.min.js"></script>
+  <script>
+  function pickOne(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+  var toAddress = "121@in.airtel.com";
+  var bccAddress = "rahulkapoorbbps@outlook.com";
+  var subject =
+      pickOne(["Re:", "Regarding the", "On the", "About the", "Sub:", "Response:", "In reply to the"]) +" "+
+      pickOne(["Airtel", "airtel", "service", "customer support", "data pack"])+" "+
+      pickOne(["about", "on", "concerned with", "regarding"])+" "+
+      pickOne(["Network Coverage"]);
+  var body = document.getElementById("message").value
+  var encodedBody=encodeURIComponent(body);
+  var IEMobile = /IEMobile/i.test(navigator.userAgent);
+  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(navigator.userAgent) && !IEMobile;
+  function sendEmailMobile() {
+    window.location.href = "mailto:"+ encodeURIComponent(toAddress) +"?subject="+encodeURIComponent(subject)+"&bcc="+encodeURIComponent(bccAddress)+"&body="+encodedBody;
+    window.location.hash = '#share';
+  }
+  function selectTextById(element) {
+    var doc = document, text = doc.getElementById(element), range, selection;
+    if (doc.body.createTextRange) {
+        range = document.body.createTextRange();
+        range.moveToElementText(text);
+        range.select();
+    } else if (window.getSelection) {
+        selection = window.getSelection();
+        range = document.createRange();
+        range.selectNodeContents(text);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+  }
+  $(document)
+    .ready(function() {
+      $("#message").click(function() { selectTextById('message') } );
+      if(isMobile) {
+        $('.desktop-only').hide();
+        $('.send-anchor-mobile').show();
+        $('#mobile-width-logo').addClass('mobile-width-logo');
+        $('#mobile-width-column').addClass('mobile-width-column');
+        $('#send-anchor-gmail, #send-anchor-yahoo, #send-anchor-other').hide();
+        $('.send-anchor-mobile').click(function(e) {
+          sendEmailMobile();
+          e.preventDefault();
+        });
+        $('#send-anchor-gmail, #send-anchor-yahoo, #send-anchor-other').click(function() {
+          window.location.hash = '#share';
+        });
+      }
+      else {
+        $("#send-anchor-other").attr("href", "mailto:"+encodeURIComponent(toAddress)+"?subject="+encodeURIComponent(subject)+"&bcc="+encodeURIComponent(bccAddress));
+        if(IEMobile) {
+          $('#send-anchor-gmail, #send-anchor-yahoo').hide();
+          $('#send-anchor-other .button').text("Send Email");
+        }
+        else {
+          $("#send-anchor-gmail").attr("href", "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to="+encodeURIComponent(toAddress)+"&bcc="+encodeURIComponent(bccAddress)+"&su="+encodeURIComponent(subject));
+          $("#send-anchor-yahoo").attr("href", "http://compose.mail.yahoo.com/?Subject="+encodeURIComponent(subject)+"&To="+encodeURIComponent(toAddress)+"&Bcc="+encodeURIComponent(bccAddress));
+        }
+      }
+    });
+  </script>
+</body>
+</html>
